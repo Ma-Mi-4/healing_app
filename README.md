@@ -1,24 +1,23 @@
-# README
+# ひと息メッセージ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 公開URL
+- https://healing-app-wcew.onrender.com
 
-Things you may want to cover:
+## アプリを作った理由
+- 新年度が始まって1ヶ月が経ち、大なり小なり環境が変化した多くの方が疲れが出始めるころではないかと思います。そんな日々を頑張っている皆さんに、少しでも前向きになって、ほっとできるようなメッセージを伝えてくれるものを作りたいなと思い作成しました。
 
-* Ruby version
+## できること
+- 「癒しをもらう」ボタンを押すとメッセージが変更される
 
-* System dependencies
+## 使用技術
+- Docker（開発環境）
+- Ruby on Rails（フレームワーク）
+- HTML（フロントエンド）
+- CSS（フロントエンド）
+- JavaScript（フロントエンド）
+- Render（デプロイ）
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 今後の改善点
+- スマホ等へのレスポンシブ対応
+- 背景色の変更
+- メッセージ数の増加
