@@ -42,10 +42,13 @@ class MainController < ApplicationController
 
     messages =
       if hour >= 5 && hour < 12
+        @greeting = "おはようございます"
         MORNING_MESSAGES
       elsif hour >= 12 && hour < 18
+        @greeting = "こんにちは"
         AFTERNOON_MESSAGES
       else
+        @greeting = "こんばんは"
         NIGHT_MESSAGES
       end
 
