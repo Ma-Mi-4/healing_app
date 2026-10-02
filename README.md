@@ -52,10 +52,10 @@
 | サービス名 | URL | できること |
 |---|---|---|
 | HOMMIK | [https://www.hommik.me/](https://www.hommik.me/) | AIが毎日ひとつのメッセージを届け、気持ちを軽くするきっかけを作る |
-| ポジティブチャット | [Google Play](https://play.google.com/store/apps/details?id=com.otss.positivechat) | AIとの会話、毎日のポジティブメッセージ、自己肯定感の記録などができる |
+| ポジティブチャット | - | AIとの会話、毎日のポジティブメッセージ、自己肯定感の記録などができる |
 | Shine | [https://www.shinetext.com/](https://www.shinetext.com/) | 毎日のポジティブアファメーションを受け取り、気分や目的に合わせて利用できる |
 | Daily Affirm | [https://dailyaffirm.com/](https://dailyaffirm.com/) | 短いアファメーションを毎日受け取ることができ、ウィジェットなどにも対応している |
-| しまぐらし | [Google Play](https://play.google.com/store/apps/details?id=jp.co.unbalance.shimagurashi) | 匿名でメッセージを送り合い、相談や共感を通して癒しを得られる |
+| しまぐらし | - | 匿名でメッセージを送り合い、相談や共感を通して癒しを得られる |
 
 ### 既存サービスとの違い
 
