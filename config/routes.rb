@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'period/index'
   root 'dashboard#index'
   get 'main/index'
   get "period/index", to: "period#index"
