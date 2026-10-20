@@ -5,6 +5,11 @@
     <%= @message %>
   </div>
 
+  <%= form_with url: favorites_path, method: :post do %>
+    <%= hidden_field_tag :message, @message %>
+    <%= submit_tag "お気に入りに登録" %>
+  <% end %>
+
   <form method="get" action="/period/index">
     <button type="submit">癒しをもらう</button>
   </form>
