@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>お気に入り一覧</h1>
+
+  <p>登録件数：<%= @favorites.count %>件</p>
+
+  <% if @favorites.any? %>
+    <ul>
+      <% @favorites.each do |favorite| %>
+        <li><%= favorite.message %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>お気に入りはまだ登録されていません。</p>
+  <% end %>
+</div>
