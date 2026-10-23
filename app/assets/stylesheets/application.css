@@ -22,7 +22,9 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
   margin: 120px auto;
   padding: 20px;
 }
@@ -89,5 +91,13 @@ input[type="submit"],
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
