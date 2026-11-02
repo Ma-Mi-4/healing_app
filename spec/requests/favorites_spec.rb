@@ -35,4 +35,45 @@ RSpec.describe "Favorites", type: :request do
       end
     end
   end
+
+  describe "GET /favorites" do
+    context "お気に入りが登録されている場合" do
+      let!(:favorite1) { Favorite.create!(message: "明日はまた違う景色が見えるかもしれません") }
+      let!(:favorite2) { Favorite.create!(message: "何もしない時間も、大切なひとときです") }
+
+      it "お気に入り一覧画面が表示される" do
+        get favorites_path
+
+        expect(response).to have_http_status(:ok)
+        expect(response.body).to include("お気に入り一覧")
+      end
+
+      it "登録済みのメッセージが表示される" do
+        get favorites_path
+
+        expect(response.body).to include(favorite1.message)
+        expect(response.body).to include(favorite2.message)
+      end
+
+      it "登録件数が正しく表示される" do
+        get favorites_path
+
+        expect(response.body).to include("登録件数：2件")
+      end
+    end
+
+    context "お気に入りが登録されていない場合" do
+      it "登録件数が0件と表示される" do
+        get favorites_path
+
+        expect(response.body).to include("登録件数：0件")
+      end
+
+      it "お気に入りが未登録であることを知らせるメッセージが表示される" do
+        get favorites_path
+
+        expect(response.body).to include("お気に入りはまだ登録されていません。")
+      end
+    end
+  end
 end
